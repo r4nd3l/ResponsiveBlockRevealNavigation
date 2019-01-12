@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'retro'; /*a name to be used later*/
+    src: url('../font/retro.ttf'); /*URL to font*/
+}
+.fancy{
+  font-family: 'retro';
+  font-size: 1.2em;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+body{
+  background: url(../img/img_02.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-family: Roboto;
+}
+
+h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.menu-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.block{
+  position: absolute;
+  width: 0%;
+  height: 100vh;
+  background: #101010;
+}
+
+.b1{
+  left: 0;
+  background: url(../img/img_03.jpg) no-repeat 0% 50%;
+}
+
+.b2{
+  left: 25%;
+  background: url(../img/img_03.jpg) no-repeat 25% 50%;
+}
+
+.b3{
+  left: 50%;
+  background: url(../img/img_03.jpg) no-repeat 50% 50%;
+}
+
+.b4{
+  left: 75%;
+  background: url(../img/img_03.jpg) no-repeat 75% 50%;
+}
+
+.strip{
+  position: absolute;
+  width: 0px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.one{
+  left: 25%;
+}
+
+.two{
+  left: 50%;
+}
+
+.three{
+  left: 75%;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  list-style: none;
+}
+
+li{
+  margin: 8px 0;
+  padding: 0;
+  color: #572af7;
+  font-size: 3em;
+  font-weight: 500;
+  font-family: 'retro';
+  -webkit-text-stroke: 1px #ffbcfb;
+  -moz-text-stroke: 1px #ffbcfb;
+  text-stroke: 1px #ffbcfb;
+}
+
+.menu li{
+  cursor: pointer;
+}
+.menu li:hover{
+  color: #31159e;
+}
+
+.menu-btn {
+  position: fixed;
+  right: 0;
+  margin: 1.2em;
+}
+
+.menu-btn span {
+  padding: 0;
+  color: #fff;
+  font-size: 2em;
+  border-radius: 25%;
+  font-family: 'retro';
+  cursor: pointer;
+}
+.menu-btn span:hover{
+  color: #b088ff;
+}
